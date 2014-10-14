@@ -1,4 +1,4 @@
-# ATG CRS Quickstart Guide
+# ATG CRS Install Guide
 
 ### Product versions used in this guide:
 
@@ -30,7 +30,7 @@ Install the latest versions of [VirtualBox](https://www.virtualbox.org/wiki/Down
 
 ## Download Required Database Software (If you're not using a pre-existing DB)
 
-The first step is to download the required installers.  In order to download Oracle database software you need an Oracle Support account.
+The first step is to download the required installers.
 
 ### Oracle 12c (12.1.0.2.0) Enterprise Edition
 
@@ -44,7 +44,7 @@ The first step is to download the required installers.  In order to download Ora
 
 You will also need a way to connect to the database.  I recommend [Oracle SQL Developer](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html).
 
-## Build the database vm (optional)
+## Build the database vm (If you you're not using an external DB)
 
 In the root directory of this project (the one that contains the Vagrantfile), type:
 
@@ -86,6 +86,7 @@ Before you can set up ATG to connect to your database, you must create four new 
 ### ATG 11.1
 
 - Go to [Oracle Edelivery](http://edelivery.oracle.com)
+- Sign in or create account
 - Accept the restrictions
 - On the search page Select the following options: 
   - Product Pack -> ATG Web Commerce
@@ -210,7 +211,7 @@ Logs are written to `/usr/local/endeca/CAS/workspace/logs`
 
 [Docs](http://docs.oracle.com/cd/E52191_01/CRS.11-1/ATGCRSInstall/html/s0205installingtheoraclecommerceplatf02.html)
 
-`./OCPlatform11.1.bin`
+`/vagrant/software/OCPlatform11.1.bin`
 
 Use the following locations:
 
@@ -221,7 +222,7 @@ Use the following locations:
 
 [Docs](http://docs.oracle.com/cd/E52191_01/CRS.11-1/ATGCRSInstall/html/s0205installingcommercereferencestore01.html)
 
-`./OCReferenceStore11.1.bin`
+`/vagrant/software/OCReferenceStore11.1.bin`
 
 ### Configure ATG: 
 

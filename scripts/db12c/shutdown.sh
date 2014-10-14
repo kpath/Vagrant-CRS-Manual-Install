@@ -3,7 +3,7 @@
 export TMP=/tmp
 export TMPDIR=$TMP
 export PATH=/usr/sbin:/usr/local/bin:$PATH
-export ORACLE_HOSTNAME=db11g
+export ORACLE_HOSTNAME=db12c
 export ORACLE_UNQNAME=orcl
 
 export ORACLE_SID=orcl 
